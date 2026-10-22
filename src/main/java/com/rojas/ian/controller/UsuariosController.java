@@ -1,5 +1,6 @@
 package com.rojas.ian.controller;
 
+import com.rojas.ian.dao.UsuarioDao;
 import com.rojas.ian.model.Usuario;
 import com.rojas.ian.model.UsuariosModel;
 import javafx.collections.FXCollections;
@@ -11,6 +12,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 public class UsuariosController {
+
+    private UsuarioDao usuarioDao = new UsuarioDao();
     @FXML
     private TextField txtNombre;
     @FXML
